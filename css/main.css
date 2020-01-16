@@ -1,665 +1,720 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        /* ---------------------------------------Variables---  */
-        
-         :root {
-            /* fonts  */
-            --letraPequeña: 10px;
-            --letraNormal: 14px;
-            --titulitos: 17px;
-            --titulosH1: 18px;
-            --titulosH2: 16px;
-            --titulosH3: 14px;
-            --titulosH4: 12px;
-            /* fonts  */
-            /* colors  */
-            --black-color: #000;
-            --white-color: #fff;
-            --blue-color: #3366cd;
-            --gray-color: #c8ccd1;
-            --perla-color: #f8f9fa;
-            /* colors  */
-            /* Centrado  */
-            --centrado: 0 auto;
-            /* Centrado  */
-            /* Bordes  */
-            --border-normal: 1px solid #000;
-        }
-        /* ---------------------------------------Variables---  */
-        
-        body {
-            font-size: var(--letraNormal);
-            font-family: Lato, sans-serif;
-            line-height: 1.2rem;
-        }
-        
-        .principal {
-            position: relative;
-            margin: 4rem auto .5rem;
-            width: 270px;
-            text-align: center;
-        }
-        
-        .central-logo {
-            position: absolute;
-            top: 136px;
-            left: 35px;
-        }
-        
-        .centra-textlogo-wrapper .text-logo {
-            background-image: url(../img/logo-texto.png);
-            background-size: 90%;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 176px;
-            height: 32px;
-            margin: var(--centrado);
-        }
-        
-        .centra-textlogo-wrapper {
-            text-align: center;
-        }
-        
-        .centra-textlogo-wrapper p strong {
-            font-size: var(--titulitos);
-            font-weight: 400;
-            font-family: "times new roman";
-        }
-        
-        .central-idioms {
-            position: relative;
-            width: 546px;
-            max-width: 100%;
-            height: 325px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .centra-languaje {
-            position: absolute;
-            text-align: center;
-            width: 156px;
-            height: 45px;
-            color: var(--blue-color);
-        }
-        
-        .lang1 {
-            top: 0;
-            right: 60%;
-        }
-        
-        .lang2 {
-            top: 0;
-            left: 60%;
-        }
-        
-        .lang3 {
-            top: 20%;
-            right: 70%;
-        }
-        
-        .lang4 {
-            top: 20%;
-            left: 70%;
-        }
-        
-        .lang5 {
-            top: 40%;
-            right: 75%;
-        }
-        
-        .lang6 {
-            top: 40%;
-            left: 75%;
-        }
-        
-        .lang7 {
-            top: 60%;
-            right: 70%;
-        }
-        
-        .lang8 {
-            top: 60%;
-            left: 70%;
-        }
-        
-        .lang9 {
-            top: 80%;
-            right: 60%;
-        }
-        
-        .lang10 {
-            top: 80%;
-            left: 60%;
-        }
-        
-        .central-idioms .centra-languaje a {
-            color: var(--blue-color);
-            font-size: var(--titulitos);
-            font-weight: bold;
-            text-decoration: none;
-        }
-        
-        .central-idioms .centra-languaje span {
-            color: #54595d;
-            font-size: var(--titulosH4);
-            font-weight: normal;
-        }
-        
-        .central-idioms .centra-languaje a strong:hover {
-            text-decoration: underline;
-        }
-        /* ---------------------------------Busqueda-button-- */
-        
-        .busqueda-wrapper {
-            width: 100%;
-            max-width: 540px;
-            margin: 0.5px auto 20px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        button i {
-            padding: 13px;
-            color: var(--white-color);
-            font-size: 20px;
-        }
-        
-        button {
-            background-color: var(--blue-color);
-            border: none;
-            border-radius: 2px;
-            margin: 0;
-            width: 50px;
-            cursor: pointer;
-        }
-        
-        .input-wrapper input {
-            width: 100%;
-            padding: 15px 30px 15px 20px;
-            border: none;
-        }
-        
-        .form div:focus-within {
-            border: 2px solid #3366cd;
-        }
-        
-        .input-wrapper {
-            margin: 15px auto;
-            width: 394px;
-            height: 46px;
-            display: flex;
-            justify-content: space-between;
-            margin: 0;
-            overflow: hidden;
-        }
-        
-        .form {
-            height: auto;
-            width: 430px;
-            display: flex;
-            align-items: center;
-            /* overflow: hidden; */
-            border: 1px solid rgba(0, 0, 0, 0.301);
-            border-radius: 3px;
-        }
-        
-        ;
-        .languaje-seach-wrapper {
-            height: 40px;
-        }
-        
-        .languaje-seach-wrapper select {
-            height: 37px;
-            border: 1px solid transparent;
-            width: 50px;
-        }
-        
-        select,
-        option {
-            background-color: transparent;
-        }
-        
-        .languaje-seach-wrapper {
-            align-self: center;
-        }
-        /* ---------------------------------Busqueda-button-- */
-        /* ---------------------------------Botton languaje- */
-        
-        .list-languaje-wrapper {
-            text-align: center;
-            line-height: 1.5rem;
-        }
-        
-        .translate-button {
-            background-color: var(--perla-color);
-            position: relative;
-            z-index: 1;
-            margin: 0 auto;
-            padding: .64rem 1.28rem;
-            border-radius: 2px;
-            border: 1px solid #a2a9b1;
-            width: 245px;
-            height: 32px;
-            color: var(--blue-color);
-            font-size: var(--letraNormal);
-        }
-        
-        .sprite-translate-icon {
-            background-image: url(../img/languaje.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-position: center;
-            text-align: center;
-        }
-        
-        .list-languaje-wrapper .sprite-translate-icon {
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0 auto;
-            position: absolute;
-            top: 2px;
-            left: 10px;
-        }
-        
-        .text-transtalate-button {
-            margin: 0px auto;
-            position: absolute;
-            right: 25px;
-            top: 7px;
-        }
-        
-        .arrow-translate-button {
-            background-image: url(../img/arrow-down.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-position: center;
-            text-align: center;
-        }
-        
-        .list-languaje-wrapper .arrow-translate-button {
-            position: absolute;
-            right: 0px;
-            top: 3px;
-        }
-        
-        .line-languaje-wrapper {
-            display: block;
-            height: 1px;
-            background-color: var(--gray-color);
-            position: relative;
-            max-width: 460px;
-            width: 80%;
-            margin: -1.0rem auto 1.6rem;
-        }
-        
-        hr {
-            border: 0;
-            border-bottom: 1px solid #c8ccd1;
-            height: 0px;
-            clear: both;
-            margin: 35px 20px;
-            font-size: 1rem;
-        }
-        /* ---------------------------------Botton languaje- */
-        /* ---------------------------------------Footer- */
-        
-        footer {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        
-        .about-wikipedia-wrapper {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            margin-top: 0;
-        }
-        
-        .services-wrapper {
-            width: 60%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: 0;
-        }
-        
-        .service {
-            width: 30%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 15px auto;
-            margin-left: 25px;
-            margin-bottom: 40px;
-        }
-        
-        .service-content-wraper {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-        
-        .service-content-wraper img {
-            width: 35px;
-            height: 40px;
-            margin-right: 20px;
-        }
-        
-        .content-service {
-            width: 80%;
-        }
-        
-        .service a h2 {
-            font-size: var(--titulosH3);
-            font-weight: 400;
-            font-family: Arial, Helvetica, sans-serif;
-            color: var(--blue-color);
-        }
-        
-        .service a p {
-            font-size: var(--titulosH4);
-            color: #54595d;
-        }
-        
-        .service a {
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;
-        }
-        
-        .terminos {}
-        /* ---------------------About wikipdia-- */
-        
-        .about-wikipedia-wrapper {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        
-        .about-fundation {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            justify-content: center;
-        }
-        
-        .about-fundation p {
-            padding-left: 10px;
-            color: #54595d;
-            text-align: justify;
-        }
-        
-        .about-wrapper {
-            padding: 15px;
-            padding-left: 80px;
-        }
-        /* ---------------------About wikipdia-- */
-        /* -------------------------Descargas-- */
-        
-        .donwload {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-        
-        .content-donwload {
-            width: 90%;
-            font-family: l"lato", sans-serif;
-        }
-        
-        .content-donwload h2 {
-            font-size: var(--titulosH4);
-            padding-left: 10px;
-            font-family: "lato"sans-serif;
-            margin-bottom: 10px;
-            color: #54595d;
-        }
-        
-        .content-donwload p {
-            padding-left: 5px;
-            text-align: justify;
-            font-family: "lato"sans-serif;
-            color: #54595d;
-        }
-        
-        .content-donwload .googleplay {
-            height: 30px;
-            border-radius: 5px;
-            width: 40%;
-            display: inline-block;
-            margin: 15px 10px;
-            background-image: url(../img/google.png);
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .content-donwload .apple {
-            height: 30px;
-            width: 40%;
-            display: inline-block;
-            border-radius: 5px;
-            margin: 15px auto;
-            background-image: url(../img/badge_ios_app_store.png);
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .content-donwload .googleplay:hover {
-            cursor: pointer;
-        }
-        
-        .content-donwload .apple:hover {
-            cursor: pointer;
-        }
-        
-        .bottons-wrapper {
-            display: flex;
-            align-items: center;
-        }
-        /* -------------------------Descargas-- */
-        /* -------------------------Derechos-- */
-        
-        .terminos {
-            margin: 0 auto;
-            margin-bottom: 10px;
-        }
-        
-        .terminos p {
-            color: #54595d;
-            font-size: var(--titulosH4);
-            display: inline-block;
-        }
-        
-        .terminos ul li {
-            display: inline-block;
-        }
-        
-        .terminos ul {
-            display: inline-block;
-        }
-        
-        .terminos ul li a {
-            margin-left: 3px;
-            display: block;
-            font-size: var(--titulosH4);
-            color: var(--blue-color);
-            text-decoration: none;
-            margin-bottom: 10px;
-            vertical-align: middle;
-        }
-        
-        .terminos ul li a:hover {
-            text-decoration: underline;
-        }
-        /* -------------------------Derechos-- */
-        /* ---------------------------------------Footer- */
-        /* ---------------------------------------Responsive- */
-        
-        @media screen and (max-width:767px) {
-            .principal {
-                display: block;
-                margin: 40px auto;
-            }
-            .principal .text-logo {
-                margin-right: 25px;
-            }
-            .centra-textlogo-wrapper {
-                width: auto;
-            }
-            footer {
-                flex-direction: column;
-                position: relative;
-            }
-            footer .about-wikipedia-wrapper {
-                width: 100%;
-                position: relative;
-            }
-            footer .about-wrapper {
-                padding: initial;
-                padding-left: 0;
-                padding: 20px;
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
-            }
-            .about-fundation {
-                display: block;
-            }
-            .about-fundation figure {
-                margin: 10px auto;
-            }
-            .about-fundation p {
-                text-align: center;
-                font-size: 13px;
-                padding-left: 0;
-            }
-            hr {
-                display: none
-            }
-            .services-wrapper {
-                width: 100%;
-                margin: 0 auto;
-            }
-            .donwload {
-                display: initial;
-            }
-            .bottons-wrapper {
-                display: initial
-            }
-            .bottons-wrapper .googleplay {
-                width: 20%;
-            }
-            .bottons-wrapper .apple {
-                width: 20%;
-            }
-            .terminos {
-                display: flex;
-                text-align: center;
-            }
-        }
-        
-        @media screen and (max-width:480px) {
-            .principal img {
-                width: 57px;
-                height: auto;
-                left: 0;
-                top: 0;
-            }
-            .principal {
-                margin: 30px auto;
-            }
-            .principal p strong {
-                font-size: 15px;
-            }
-            .lang1 {
-                top: 0;
-                right: 60%;
-            }
-            .lang2 {
-                top: 0;
-                left: 60%;
-            }
-            .lang3 {
-                top: 20%;
-                right: 60%;
-            }
-            .lang4 {
-                top: 20%;
-                left: 60%;
-            }
-            .lang5 {
-                top: 40%;
-                right: 60%;
-            }
-            .lang6 {
-                top: 40%;
-                left: 60%;
-            }
-            .lang7 {
-                top: 60%;
-                right: 60%;
-            }
-            .lang8 {
-                top: 60%;
-                left: 60%;
-            }
-            .lang9 {
-                top: 80%;
-                right: 60%;
-            }
-            .lang10 {
-                top: 80%;
-                left: 60%;
-            }
-            .bottons-wrapper .googleplay {
-                width: 30%;
-            }
-            .bottons-wrapper .apple {
-                width: 30%;
-            }
-            .input-wrapper {
-                margin: 15px auto;
-                width: 100%;
-                max-width: 400px;
-                height: 46px;
-                display: flex;
-                justify-content: space-between;
-                margin: 0;
-                overflow: hidden;
-            }
-            .form {
-                height: auto;
-                margin: 0 auto;
-                width: 90%;
-                display: flex;
-                align-items: center;
-                /* overflow: hidden; */
-                border: 1px solid rgba(0, 0, 0, 0.301);
-                border-radius: 3px;
-            }
-        }
-        
-        @media screen and (max-width:320px) {
-            .central-idioms {
-                width: 200px;
-            }
-            .form {
-                width: 280px;
-            }
-            .bottons-wrapper .googleplay {
-                width: 33%;
-            }
-            .bottons-wrapper .apple {
-                width: 33%;
-            }
-        }
-        /* ---------------------------------------Responsive- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------Variables---  */
+
+ :root {
+    /* fonts  */
+    --letraPequeña: 10px;
+    --letraNormal: 14px;
+    --titulitos: 17px;
+    --titulosH1: 18px;
+    --titulosH2: 16px;
+    --titulosH3: 14px;
+    --titulosH4: 12px;
+    /* fonts  */
+    /* colors  */
+    --black-color: #000;
+    --white-color: #fff;
+    --blue-color: #3366cd;
+    --gray-color: #c8ccd1;
+    --perla-color: #f8f9fa;
+    /* colors  */
+    /* Centrado  */
+    --centrado: 0 auto;
+    /* Centrado  */
+    /* Bordes  */
+    --border-normal: 1px solid #000;
+}
+
+
+/* ---------------------------------------Variables---  */
+
+body {
+    font-size: var(--letraNormal);
+    font-family: Lato, sans-serif;
+    line-height: 1.2rem;
+}
+
+.principal {
+    position: relative;
+    margin: 4rem auto .5rem;
+    width: 270px;
+    text-align: center;
+}
+
+.central-logo {
+    position: absolute;
+    top: 136px;
+    left: 35px;
+}
+
+.centra-textlogo-wrapper .text-logo {
+    background-image: url(../img/logo-texto.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 176px;
+    height: 32px;
+    margin: var(--centrado);
+}
+
+.centra-textlogo-wrapper {
+    text-align: center;
+}
+
+.centra-textlogo-wrapper p strong {
+    font-size: var(--titulitos);
+    font-weight: 400;
+    font-family: "times new roman";
+}
+
+.central-idioms {
+    position: relative;
+    width: 546px;
+    max-width: 100%;
+    height: 325px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.centra-languaje {
+    position: absolute;
+    text-align: center;
+    width: 156px;
+    height: 45px;
+    color: var(--blue-color);
+}
+
+.lang1 {
+    top: 0;
+    right: 60%;
+}
+
+.lang2 {
+    top: 0;
+    left: 60%;
+}
+
+.lang3 {
+    top: 20%;
+    right: 70%;
+}
+
+.lang4 {
+    top: 20%;
+    left: 70%;
+}
+
+.lang5 {
+    top: 40%;
+    right: 75%;
+}
+
+.lang6 {
+    top: 40%;
+    left: 75%;
+}
+
+.lang7 {
+    top: 60%;
+    right: 70%;
+}
+
+.lang8 {
+    top: 60%;
+    left: 70%;
+}
+
+.lang9 {
+    top: 80%;
+    right: 60%;
+}
+
+.lang10 {
+    top: 80%;
+    left: 60%;
+}
+
+.central-idioms .centra-languaje a {
+    color: var(--blue-color);
+    font-size: var(--titulitos);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.central-idioms .centra-languaje span {
+    color: #54595d;
+    font-size: var(--titulosH4);
+    font-weight: normal;
+}
+
+.central-idioms .centra-languaje a strong:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------Busqueda-button-- */
+
+.busqueda-wrapper {
+    width: 100%;
+    max-width: 540px;
+    margin: 0.5px auto 20px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button i {
+    padding: 13px;
+    color: var(--white-color);
+    font-size: 20px;
+}
+
+button {
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 2px;
+    margin: 0;
+    width: 50px;
+    cursor: pointer;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 15px 30px 15px 20px;
+    border: none;
+}
+
+.form div:focus-within {
+    border: 2px solid #3366cd;
+}
+
+.input-wrapper {
+    margin: 15px auto;
+    width: 394px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    overflow: hidden;
+}
+
+.form {
+    height: auto;
+    width: 430px;
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    border-radius: 3px;
+}
+
+;
+.languaje-seach-wrapper {
+    height: 40px;
+}
+
+.languaje-seach-wrapper select {
+    height: 37px;
+    border: 1px solid transparent;
+    width: 50px;
+}
+
+select,
+option {
+    background-color: transparent;
+}
+
+.languaje-seach-wrapper {
+    align-self: center;
+}
+
+
+/* ---------------------------------Busqueda-button-- */
+
+
+/* ---------------------------------Botton languaje- */
+
+.list-languaje-wrapper {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.translate-button {
+    background-color: var(--perla-color);
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding: .64rem 1.28rem;
+    border-radius: 2px;
+    border: 1px solid #a2a9b1;
+    width: 245px;
+    height: 32px;
+    color: var(--blue-color);
+    font-size: var(--letraNormal);
+}
+
+.sprite-translate-icon {
+    background-image: url(../img/languaje.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.list-languaje-wrapper .sprite-translate-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    position: absolute;
+    top: 2px;
+    left: 10px;
+}
+
+.text-transtalate-button {
+    margin: 0px auto;
+    position: absolute;
+    right: 25px;
+    top: 7px;
+}
+
+.arrow-translate-button {
+    background-image: url(../img/arrow-down.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.list-languaje-wrapper .arrow-translate-button {
+    position: absolute;
+    right: 0px;
+    top: 3px;
+}
+
+.line-languaje-wrapper {
+    display: block;
+    height: 1px;
+    background-color: var(--gray-color);
+    position: relative;
+    max-width: 460px;
+    width: 80%;
+    margin: -1.0rem auto 1.6rem;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #c8ccd1;
+    height: 0px;
+    clear: both;
+    margin: 35px 20px;
+    font-size: 1rem;
+}
+
+
+/* ---------------------------------Botton languaje- */
+
+
+/* ---------------------------------------Footer- */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-wikipedia-wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.services-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.service {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px auto;
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
+
+.service-content-wraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.service-content-wraper img {
+    width: 35px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.content-service {
+    width: 80%;
+}
+
+.service a h2 {
+    font-size: var(--titulosH3);
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blue-color);
+}
+
+.service a p {
+    font-size: var(--titulosH4);
+    color: #54595d;
+}
+
+.service a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.terminos {}
+
+
+/* ---------------------About wikipdia-- */
+
+.about-wikipedia-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-fundation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.about-fundation p {
+    padding-left: 10px;
+    color: #54595d;
+    text-align: justify;
+}
+
+.about-wrapper {
+    padding: 15px;
+    padding-left: 80px;
+}
+
+
+/* ---------------------About wikipdia-- */
+
+
+/* -------------------------Descargas-- */
+
+.donwload {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.content-donwload {
+    width: 90%;
+    font-family: l"lato", sans-serif;
+}
+
+.content-donwload h2 {
+    font-size: var(--titulosH4);
+    padding-left: 10px;
+    font-family: "lato"sans-serif;
+    margin-bottom: 10px;
+    color: #54595d;
+}
+
+.content-donwload p {
+    padding-left: 5px;
+    text-align: justify;
+    font-family: "lato"sans-serif;
+    color: #54595d;
+}
+
+.content-donwload .googleplay {
+    height: 30px;
+    border-radius: 5px;
+    width: 40%;
+    display: inline-block;
+    margin: 15px 10px;
+    background-image: url(../img/google.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.content-donwload .apple {
+    height: 30px;
+    width: 40%;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 15px auto;
+    background-image: url(../img/badge_ios_app_store.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.content-donwload .googleplay:hover {
+    cursor: pointer;
+}
+
+.content-donwload .apple:hover {
+    cursor: pointer;
+}
+
+.bottons-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+/* -------------------------Descargas-- */
+
+
+/* -------------------------Derechos-- */
+
+.terminos {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.terminos p {
+    color: #54595d;
+    font-size: var(--titulosH4);
+    display: inline-block;
+}
+
+.terminos ul li {
+    display: inline-block;
+}
+
+.terminos ul {
+    display: inline-block;
+}
+
+.terminos ul li a {
+    margin-left: 3px;
+    display: block;
+    font-size: var(--titulosH4);
+    color: var(--blue-color);
+    text-decoration: none;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.terminos ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* -------------------------Derechos-- */
+
+
+/* ---------------------------------------Footer- */
+
+
+/* ---------------------------------------Responsive- */
+
+@media screen and (max-width:767px) {
+    .principal {
+        display: block;
+        margin: 40px auto;
+    }
+    .principal .text-logo {
+        margin-right: 25px;
+    }
+    .centra-textlogo-wrapper {
+        width: auto;
+    }
+    footer {
+        flex-direction: column;
+        position: relative;
+    }
+    footer .about-wikipedia-wrapper {
+        width: 100%;
+        position: relative;
+    }
+    footer .about-wrapper {
+        padding: initial;
+        padding-left: 0;
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .about-fundation {
+        display: block;
+    }
+    .about-fundation figure {
+        margin: 10px auto;
+    }
+    .about-fundation p {
+        text-align: center;
+        font-size: 13px;
+        padding-left: 0;
+    }
+    hr {
+        display: none
+    }
+    .services-wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .donwload {
+        display: initial;
+    }
+    .bottons-wrapper {
+        display: initial
+    }
+    .bottons-wrapper .googleplay {
+        width: 20%;
+    }
+    .bottons-wrapper .apple {
+        width: 20%;
+    }
+    .terminos {
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .input-wrapper {
+        margin: 15px auto;
+        width: inherit;
+        /* max-width: 400px; */
+        height: 46px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        overflow: hidden;
+    }
+    .form {
+        height: auto;
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        /* overflow: hidden; */
+        border: 1px solid rgba(0, 0, 0, 0.301);
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .principal img {
+        width: 57px;
+        height: auto;
+        left: 0;
+        top: 0;
+    }
+    .principal {
+        margin: 30px auto;
+    }
+    .principal p strong {
+        font-size: 15px;
+    }
+    .lang1 {
+        top: 0;
+        right: 60%;
+    }
+    .lang2 {
+        top: 0;
+        left: 60%;
+    }
+    .lang3 {
+        top: 20%;
+        right: 60%;
+    }
+    .lang4 {
+        top: 20%;
+        left: 60%;
+    }
+    .lang5 {
+        top: 40%;
+        right: 60%;
+    }
+    .lang6 {
+        top: 40%;
+        left: 60%;
+    }
+    .lang7 {
+        top: 60%;
+        right: 60%;
+    }
+    .lang8 {
+        top: 60%;
+        left: 60%;
+    }
+    .lang9 {
+        top: 80%;
+        right: 60%;
+    }
+    .lang10 {
+        top: 80%;
+        left: 60%;
+    }
+    .bottons-wrapper .googleplay {
+        width: 30%;
+    }
+    .bottons-wrapper .apple {
+        width: 30%;
+    }
+    .input-wrapper {
+        margin: 15px auto;
+        width: 100%;
+        max-width: 400px;
+        height: 46px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        overflow: hidden;
+    }
+    .form {
+        height: auto;
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        /* overflow: hidden; */
+        border: 1px solid rgba(0, 0, 0, 0.301);
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .central-idioms {
+        width: 200px;
+    }
+    .form {
+        width: 280px;
+    }
+    .bottons-wrapper .googleplay {
+        width: 33%;
+    }
+    .bottons-wrapper .apple {
+        width: 33%;
+    }
+}
+
+
+/* ---------------------------------------Responsive- */
