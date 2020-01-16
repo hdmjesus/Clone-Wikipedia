@@ -507,7 +507,7 @@
         @media screen and (max-width:767px) {
             .principal {
                 display: block;
-                margin: 0 auto;
+                margin: 40px auto;
             }
             .principal .text-logo {
                 margin-right: 25px;
@@ -518,10 +518,6 @@
             footer {
                 flex-direction: column;
                 position: relative;
-            }
-            footer .wikipedia-donwload {
-                position: absolute;
-                top: 530px;
             }
             footer .about-wikipedia-wrapper {
                 width: 100%;
@@ -553,11 +549,6 @@
                 width: 100%;
                 margin: 0 auto;
             }
-            .terminos {
-                position: absolute;
-                top: 710px;
-                left: 30px;
-            }
             .donwload {
                 display: initial;
             }
@@ -569,6 +560,10 @@
             }
             .bottons-wrapper .apple {
                 width: 20%;
+            }
+            .terminos {
+                display: flex;
+                text-align: center;
             }
         }
         
@@ -625,24 +620,6 @@
                 top: 80%;
                 left: 60%;
             }
-            .terminos {
-                position: absolute;
-                top: 1050px;
-                left: 30px;
-                text-align: center;
-                margin: 0;
-                line-height: 20px;
-            }
-            .terminos ul {
-                display: inline;
-            }
-            .terminos ul li {
-                display: inline-block;
-            }
-            footer .wikipedia-donwload {
-                position: absolute;
-                top: 830px;
-            }
         }
         
         @media screen and (max-width:320px) {
@@ -651,18 +628,6 @@
             }
             .form {
                 width: 280px;
-            }
-            footer .wikipedia-donwload {
-                position: absolute;
-                top: 930px;
-            }
-            .terminos {
-                position: absolute;
-                top: 1180px;
-                left: 30px;
-                text-align: center;
-                margin: 0;
-                line-height: 20px;
             }
             .bottons-wrapper .googleplay {
                 width: 33%;
