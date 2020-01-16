@@ -620,6 +620,32 @@
                 top: 80%;
                 left: 60%;
             }
+            .bottons-wrapper .googleplay {
+                width: 30%;
+            }
+            .bottons-wrapper .apple {
+                width: 30%;
+            }
+            .input-wrapper {
+                margin: 15px auto;
+                width: 100%;
+                max-width: 400px;
+                height: 46px;
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                overflow: hidden;
+            }
+            .form {
+                height: auto;
+                margin: 0 auto;
+                width: 90%;
+                display: flex;
+                align-items: center;
+                /* overflow: hidden; */
+                border: 1px solid rgba(0, 0, 0, 0.301);
+                border-radius: 3px;
+            }
         }
         
         @media screen and (max-width:320px) {
